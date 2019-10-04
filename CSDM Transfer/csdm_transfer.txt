@@ -1,0 +1,38 @@
+[ro]
+CSDM_TRANSFER_PUB_T 		= ^4* ^1Te-ai transferat la echipa ^3Terrorist.
+CSDM_TRANSFER_PUB_AL_T 		= ^4* ^1Ești deja la echipa ^3Terrorist.
+
+CSDM_TRANSFER_PUB_CT 		=  ^4* ^1Te-ai transferat la echipa ^3Counter-Terrorist.
+CSDM_TRANSFER_PUB_AL_CT 	= ^4* ^1Ești deja la echipa ^3Counter-Terrorist.
+
+CSDM_TRANSFER_PUB_SPEC 		= ^4* ^1Te-ai transferat ^3Sepctator.
+CSDM_TRANSFER_PUB_AL_SPEC 	= ^4* ^1Ești deja ^3Spectator.
+
+CSDM_TRANSFER_PLAY_SP 		= ^4* ^3Nu poți folosi comanda când ești ^4Spectator^3.
+CSDM_TRANSFER_PLAY_AL 		= ^4* ^3Nu poți primi ^4Respawn ^3dacă ești în viață !
+CSDM_TRANSFER_PLAY_RSP 		= ^4* ^1Ai primit ^3Respawn ^1cu succes !
+
+CSDM_TRANSFER_ADM_T 		= ^4* ^1Administratorul ^4%s ^1Îl mută pe ^4%s ^1la echipa ^3Terrorist.
+CSDM_TRANSFER_ADM_CT 		= ^4* ^1Administratorul ^4%s ^1Îl mută pe ^4%s ^1la echipa ^3Counter-Terrorist.
+CSDM_TRANSFER_ADM_SPEC 		= ^4* ^1Administratorul ^4%s ^1Îl mută pe ^4%s ^3Spectator.
+CSDM_TRANSFER_ADM_RSP 		= ^4* ^1Administratorul ^4%s ^1Îi oferă ^3Respawn ^1jucatorului ^4%s.
+
+
+[en]
+CSDM_TRANSFER_PUB_T 		= ^4* ^1Te-ai transferat la echipa ^3Terrorist.
+CSDM_TRANSFER_PUB_AL_T 		= ^4* ^1Ești deja la echipa ^3Terrorist.
+
+CSDM_TRANSFER_PUB_CT 		=  ^4* ^1Te-ai transferat la echipa ^3Counter-Terrorist.
+CSDM_TRANSFER_PUB_AL_CT 	= ^4* ^1Ești deja la echipa ^3Counter-Terrorist.
+
+CSDM_TRANSFER_PUB_SPEC 		= ^4* ^1Te-ai transferat ^3Sepctator.
+CSDM_TRANSFER_PUB_AL_SPEC 	= ^4* ^1Ești deja ^3Spectator.
+
+CSDM_TRANSFER_PLAY_SP 		= ^4* ^3Nu poți folosi comanda când ești ^4Spectator^3.
+CSDM_TRANSFER_PLAY_AL 		= ^4* ^3Nu poți primi ^4Respawn ^3dacă ești în viață !
+CSDM_TRANSFER_PLAY_RSP 		= ^4* ^1Ai primit ^3Respawn ^1cu succes !
+
+CSDM_TRANSFER_ADM_T 		= ^4* ^1Administratorul ^4%s ^1Îl mută pe ^4%s ^1la echipa ^3Terrorist.
+CSDM_TRANSFER_ADM_CT 		= ^4* ^1Administratorul ^4%s ^1Îl mută pe ^4%s ^1la echipa ^3Counter-Terrorist.
+CSDM_TRANSFER_ADM_SPEC 		= ^4* ^1Administratorul ^4%s ^1Îl mută pe ^4%s ^3Spectator.
+CSDM_TRANSFER_ADM_RSP 		= ^4* ^1Administratorul ^4%s ^1Îi oferă ^3Respawn ^1jucatorului ^4%s.
