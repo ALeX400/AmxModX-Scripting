@@ -4,10 +4,10 @@
 #include <csdm>
 
 new const 	Versiune[]		= "1.6.3",
-			Build			= 13,
-			Data[]			= "03.10.2019",
-			NumePlugin[]	= "CSDM Transfer",
-			Autor[]			= "Setta0629 + Edit @LeX";
+		Build			= 13,
+		Data[]			= "03.10.2019",
+		NumePlugin[]		= "CSDM Transfer",
+		Autor[]			= "Setta0629 + Edit @LeX";
 
 new		cvar_pub_chat,
 		cvar_adm_chat;
