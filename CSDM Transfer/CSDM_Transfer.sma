@@ -1,6 +1,8 @@
+
 /*
 Atentie !!!
 Acest plugin este creat exclusiv pentru sistemul CSDM
+
 
 
 *Acest plugin a fost editat de mine pentru a rezolva Bug-ul referitor oferirea de respawn dupa transfer si functia /respawn
@@ -10,45 +12,49 @@ Acest plugin este creat exclusiv pentru sistemul CSDM
 *Acest plugin a fost deja testat pe noul engine, reHLDS ce ruleaza un sistem CSDM
 
 *Acest plugin a fost testat si compilat pe urmatoarele versiuni de amxmodx: 
+
 1.8.3 si amxmodx in pragul beta 1.9.0, versiunea 1.8.2 nu este acceptata.
 
-Update 1.6.3:
-- BugFix, suprapunere peste cfg_slash sau unul similar
-- Adaugare fisier lang pentru absolut mesajele in chat pentru o editare completa a mesajelor fara compilare
-- A fost introdusa comanda in chat !csdm_transfer pentru informatii despre plugin, versiune, build si data lansarii, 
-pentru a sti ce versiune rulati cu usurinta
-- Adaugare Cvar pentru controlul mesajelor in chat:
-  * csdm_transfer_adm 	1 = activat, 0 = dezactivat | Mesajele referitoare la afisarea activitatii adminilor in chat 		| Mesaje Admin
-  * csdm_transfer_chat 	1 = activat, 0 = dezactivat | Mesajele referitoare la afisarea activitatii publice a jucatorilor 	| Mesaje Jucatori
-*/
 
+
+Update [1.6.3]:
+- 	BugFix, suprapunere peste cfg_slash sau unul similar
+- 	Adaugare fisier lang pentru absolut mesajele in chat pentru o editare completa a mesajelor fara compilare
+- 	A fost introdusa comanda in chat !csdm_transfer pentru informatii despre plugin, versiune, build si data lansarii, 
+	pentru a sti ce versiune rulati cu usurinta
+- 	Adaugare Cvar pentru controlul mesajelor in chat:
+		* csdm_transfer_adm 	1 = activat, 0 = dezactivat | Mesajele referitoare la afisarea activitatii adminilor in chat 		| Mesaje Admin
+		* csdm_transfer_chat 	1 = activat, 0 = dezactivat | Mesajele referitoare la afisarea activitatii publice a jucatorilor 	| Mesaje Jucatori
+*/
 
 #include <amxmodx>
 #include <cstrike>
 #include <amxmisc>
 #include <csdm>
 
-new const 	Versiune[]		= "1.6.3",
-		Build			= 13,
-		Data[]			= "03.10.2019",
-		NumePlugin[]		= "CSDM Transfer",
-		Autor[]			= "Setta0629 + Edit @LeX";
+new const 	
+		Versiune[] 	= "1.6.3",
+		Build 		= 13,
+		Data[] 		= "03.10.2019",
+		NumePlugin[] 	= "CSDM Transfer",
+		Autor[]		= "Setta0629 + Edit @LeX";
 
-new		cvar_pub_chat,
-		cvar_adm_chat;
+new		
+	cvar_pub_chat,
+	cvar_adm_chat;
 
 public plugin_init()
 {    
-
+	
 	register_plugin(NumePlugin, Versiune, Autor);
-		
+	
 	register_concmd("amx_ct", "cmd_ct", ADMIN_KICK,"<nume> - Transfera un jucator la echipa 'Counter-Terorist' .");
 	register_concmd("amx_t", "cmd_t", ADMIN_KICK,"<nume> - Transfera un jucator la echipa 'Terorist' .");
 	register_concmd("amx_spec", "cmd_spec", ADMIN_KICK,"<nume> - Transfera un jucator la echipa 'spectator' .");
 	register_concmd("amx_play", "cmd_respawn", ADMIN_KICK,"<nume> - Ofera 'respawn' unui jucator .");
 	
 	register_cvar("csdm_transfer", Versiune, FCVAR_SERVER | FCVAR_SPONLY);
-
+	
 	register_dictionary("csdm_transfer.txt");
 	
 	cvar_pub_chat = register_cvar("csdm_transfer_adm", "1");
@@ -61,7 +67,7 @@ public plugin_init()
 public Comenzi_Chat(id) 
 {
 	new Mesaj[192];
-		
+	
 	read_argv(1, Mesaj, 31);
 	remove_quotes(Mesaj);
 	
@@ -72,7 +78,7 @@ public Comenzi_Chat(id)
 	}
 	
 	if( equal(Mesaj, "!play" ))
-		{
+	{
 		
 		if(is_user_alive(id))
 		{
@@ -114,7 +120,7 @@ public Comenzi_Chat(id)
 		}
 		return 1;
 	}
-
+	
 	if ( equal(Mesaj, "!ct" ))
 	{
 		if(cs_get_user_team(id) == CS_TEAM_CT)
@@ -178,7 +184,7 @@ public cmd_respawn(id, level, cid)
 		console_print(id, "Nu poti oferi respawn jucatorului '%s' cat timp este in viata !", name2);
 		return 1;
 	}
-		
+	
 	if(cs_get_user_team(player) == CS_TEAM_SPECTATOR)
 	{
 		console_print(id,"Nu poti oferi respawn jucatorului '%s' cat timp este Spectator !", name2);
@@ -247,7 +253,7 @@ public cmd_t(id, level, cid)
 	
 	if (!player)    
 		return 1;
-		
+	
 	if(cs_get_user_team(player) == CS_TEAM_T)
 	{
 		console_print(id, "Jucatorul este deja in echipa Terrorist");
@@ -287,7 +293,7 @@ public cmd_spec(id, level, cid)
 	
 	if (!player)
 		return 1;
-		
+	
 	if(cs_get_user_team(player) == CS_TEAM_SPECTATOR)
 	{
 		console_print(id, "Jucatorul este deja Spectator");
