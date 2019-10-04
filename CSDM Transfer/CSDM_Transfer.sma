@@ -1,3 +1,28 @@
+/*
+Atentie !!!
+Acest plugin este creat exclusiv pentru sistemul CSDM
+
+
+*Acest plugin a fost editat de mine pentru a rezolva Bug-ul referitor oferirea de respawn dupa transfer si functia /respawn
+
+*Nu ofer support pentru orice fel de problema sau eroare, plugin-ul ruleaza cu o rata de succes de 100% fara probleme
+
+*Acest plugin a fost deja testat pe noul engine, reHLDS ce ruleaza un sistem CSDM
+
+*Acest plugin a fost testat si compilat pe urmatoarele versiuni de amxmodx: 
+1.8.3 si amxmodx in pragul beta 1.9.0, versiunea 1.8.2 nu este acceptata.
+
+Update 1.6.3:
+- BugFix, suprapunere peste cfg_slash sau unul similar
+- Adaugare fisier lang pentru absolut mesajele in chat pentru o editare completa a mesajelor fara compilare
+- A fost introdusa comanda in chat !csdm_transfer pentru informatii despre plugin, versiune, build si data lansarii, 
+pentru a sti ce versiune rulati cu usurinta
+- Adaugare Cvar pentru controlul mesajelor in chat:
+  * csdm_transfer_adm 	1 = activat, 0 = dezactivat | Mesajele referitoare la afisarea activitatii adminilor in chat 		| Mesaje Admin
+  * csdm_transfer_chat 	1 = activat, 0 = dezactivat | Mesajele referitoare la afisarea activitatii publice a jucatorilor 	| Mesaje Jucatori
+*/
+
+
 #include <amxmodx>
 #include <cstrike>
 #include <amxmisc>
