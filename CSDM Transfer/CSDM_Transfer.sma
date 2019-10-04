@@ -3,24 +3,24 @@
 #include <amxmisc>
 #include <csdm>
 
-new const 		Versiune[]		= "1.6.3",
+new const 	Versiune[]		= "1.6.3",
 			Build			= 13,
 			Data[]			= "03.10.2019",
-			NumePlugin[]		= "CSDM Transfer",
+			NumePlugin[]	= "CSDM Transfer",
 			Autor[]			= "Setta0629 + Edit @LeX";
 
-new 	cvar_pub_chat,
-	cvar_adm_chat;
+new		cvar_pub_chat,
+		cvar_adm_chat;
 
 public plugin_init()
 {    
 
 	register_plugin(NumePlugin, Versiune, Autor);
 		
-	register_concmd("amx_ct",		 	"cmd_ct",	 	ADMIN_KICK,"<nume> - Transfera un jucator la echipa 'Counter-Terorist' .");
-	register_concmd("amx_t",	 		"cmd_t",	 	ADMIN_KICK,"<nume> - Transfera un jucator la echipa 'Terorist' .");
-	register_concmd("amx_spec",	 		"cmd_spec",	 	ADMIN_KICK,"<nume> - Transfera un jucator la echipa 'spectator' .");
-	register_concmd("amx_play",			"cmd_respawn",		ADMIN_KICK,"<nume> - Ofera 'respawn' unui jucator .");
+	register_concmd("amx_ct", "cmd_ct", ADMIN_KICK,"<nume> - Transfera un jucator la echipa 'Counter-Terorist' .");
+	register_concmd("amx_t", "cmd_t", ADMIN_KICK,"<nume> - Transfera un jucator la echipa 'Terorist' .");
+	register_concmd("amx_spec", "cmd_spec", ADMIN_KICK,"<nume> - Transfera un jucator la echipa 'spectator' .");
+	register_concmd("amx_play", "cmd_respawn", ADMIN_KICK,"<nume> - Ofera 'respawn' unui jucator .");
 	
 	register_cvar("csdm_transfer", Versiune, FCVAR_SERVER | FCVAR_SPONLY);
 
