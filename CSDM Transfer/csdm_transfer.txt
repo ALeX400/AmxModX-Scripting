@@ -36,3 +36,4 @@ CSDM_TRANSFER_ADM_T 		= ^4* ^1Administratorul ^4%s ^1Îl mută pe ^4%s ^1la echi
 CSDM_TRANSFER_ADM_CT 		= ^4* ^1Administratorul ^4%s ^1Îl mută pe ^4%s ^1la echipa ^3Counter-Terrorist.
 CSDM_TRANSFER_ADM_SPEC 		= ^4* ^1Administratorul ^4%s ^1Îl mută pe ^4%s ^3Spectator.
 CSDM_TRANSFER_ADM_RSP 		= ^4* ^1Administratorul ^4%s ^1Îi oferă ^3Respawn ^1jucatorului ^4%s.
+
