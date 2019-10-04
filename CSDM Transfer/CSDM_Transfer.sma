@@ -1,26 +1,3 @@
-/*
-Atentie !!!
-Acest plugin este creat exclusiv pentru sistemul CSDM
-
-
-*Acest plugin a fost editat de mine pentru a rezolva acel bug pentru transferarea juacatorilor
-
-*Nu sariti in cap acum daca apar probleme, nu sunt scripter si nici nu sunt obligat sa ofer support
-
-*Acest plugin a fost deja testat pe noul engine, reHLDS ce ruleaza un sistem CSDM functional
-
-*Acest plugin a fost testat si compilat pe urmatoarele versiuni de amxmodx: 
-1.8.3 si amxmodx in pragul beta 1.9.0
-
-Update 1.6.3:
-- BugFix | suprapunere peste cfg_slash
-- Adaugare fisier lang pentru absolut toate mesajele in chat pentru o editare completa a mesajelor fara compilare
-- A fost introdusa comanda in chat !csdm_transfer pentru informatii despre plugin
-- Adaugare Cvar pentru controlul total al chat-ului
-  * csdm_transfer_adm 	1 = activat, 0 = dezactivat | Mesajele referitoare la afisarea activitatii adminilor in chat 		| Mesaje Admin
-  * csdm_transfer_chat 	1 = activat, 0 = dezactivat | Mesajele referitoare la afisarea activitatii publice a jucatorilor 	| Mesaje Jucatori
-*/
-
 #include <amxmodx>
 #include <cstrike>
 #include <amxmisc>
