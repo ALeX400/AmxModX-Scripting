@@ -17,7 +17,7 @@ new const VersionString[] = "1.00";
 public plugin_init() {
     register_plugin("HTTP:X Test", VersionString, "[ --{-@ ]");
 
-    HTTPX_Download("http://your.website.com/your_plugin/version.txt", "", "Complete", "", 80, REQUEST_GET, "", "", 0, -1);
+    HTTPX_Download("https://github.com/ALeX400/AmxModX-Scripting/blob/master/test_autoupdate.sma", "", "Complete", "", 443, REQUEST_GET, "", "", 0, -1);
 }
 
 public Complete(DownloadID, Error) {
