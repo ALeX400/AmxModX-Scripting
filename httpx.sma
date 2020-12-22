@@ -57,7 +57,7 @@ native socket_destroy_t(const iThreadHandle);
 #define ctod(%0) ( '0' <= %0 <= '9' ? %0 - '0' : 'A' <= %0 <= 'Z' ? %0 -'A' + 10 : 'a' <= %0 <= 'z' ? %0 -'a' + 10 : 0 )
 #define dtoc(%0) ( 0 <= %0 <= 9 ? %0 + '0' : 10 <= %0 <= 35 ? %0 + 'A' - 10 : 0 )
 
-new const VersionNum = 111;
+new const VersionNum = 222;
 
 enum ( <<= 1 ) {
 	STATUS_ACTIVE = 1,
