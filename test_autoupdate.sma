@@ -11,7 +11,7 @@ native HTTPX_GetData(data[], len)
 #define AUTOUPDATE_FILE_ID "76775"
 #define AUTOUPDATE_HOW_OFTEN 0 // Only use this when checking if a new version exists.
 
-new const VersionNum =      100;
+new const VersionNum =      101;
 new const VersionString[] = "1.00";
 
 public plugin_init() {
