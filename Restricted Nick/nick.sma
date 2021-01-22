@@ -18,25 +18,17 @@ public plugin_init()
 	formatex(r_name, charsmax(r_name), "%s/Random_Nick.ini", ConfigurationFilesDirectory);
 	
 	if(!file_exists(def_name))
-	{
 		write_file(def_name, "", -1);
-	}
+		
 	if(!file_exists(r_name))
-	{
 		write_file(r_name, "", -1);
-	}
 	
-	if (!file_exists(Location))
+	if(!file_exists(Location))
 	{
 		File = fopen(Location, "w+");
-		
 		switch (File)
 		{
-			case 0:
-			{
-				
-			}
-			
+			case 0:{ }
 			default:
 			{
 				fclose(File);
@@ -45,27 +37,25 @@ public plugin_init()
 	}
 
 	File = fopen(Location, "r");
-
-	if (!File)
+	
+	if(!File)
 	{
 		log_amx("Unable to open ^"%/Rest-Nick.ini^".", ConfigurationFilesDirectory);
-
 		return;
 	}
 	
 	g_Things = ArrayCreate(64);
 	
-	if (g_Things == Invalid_Array)
+	if(g_Things == Invalid_Array)
 	{
 		set_fail_state("Plugin failed to load.");
-		
 		return;
 	}
 
-	while (!feof(File))
+	while(!feof(File))
 	{
 		fgets(File, Line, charsmax(Line));
-
+		
 		trim(Line);
 		
 		if (strlen(Line) && Line[0] != ';')
@@ -113,7 +103,7 @@ public client_putinserver(Client)
 
 public client_infochanged(Client)
 {
-	if (g_Things == Invalid_Array || !ArraySize(g_Things))
+	if(g_Things == Invalid_Array || !ArraySize(g_Things))
 	{
 		return;
 	}
