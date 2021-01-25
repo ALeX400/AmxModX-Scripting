@@ -3,8 +3,8 @@
 #include <amxmisc>
 
 new const 		PluginName[]		=	"Test Restrict Change Name",
-				Version[]			= 	"1.0a-dev",
-				Author[]			=	"Team RsX";
+			Version[]		= 	"1.0a-dev",
+			Author[]		=	"Team RsX";
 
 new bool:Block_Nick[MAX_PLAYERS+1]
 
