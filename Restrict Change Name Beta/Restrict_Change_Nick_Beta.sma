@@ -75,6 +75,7 @@ public change_nick(id)
 		{
 			Block_Nick[id] = true;
 			client_print_color(id, -2, "[^4AMXX^1] ^3You are not alowed to change nick on server");
+			client_cmd(id, "name ^"%s^"", szOldName)
 			set_user_info(id, name, szOldName) 
 			return FMRES_HANDLED
 		} 
